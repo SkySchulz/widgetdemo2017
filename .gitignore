@@ -17,3 +17,4 @@ project/plugins/project/
 .worksheet
 .idea/
 widgetdemo2017.iml
+/node_modules/
