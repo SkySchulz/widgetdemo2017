@@ -112,7 +112,7 @@ const onFail = function (request) {
     console.error("request failed: " + request.status + ', ' + request.url);
     fallBack++;
     if (fallBack == 1) {
-        getJson("data/master_scoreboard.json", onScoreboard, onFail, onTimeout);
+        getJson("resources/data/master_scoreboard.json", onScoreboard, onFail, onTimeout);
     }
 };
 
