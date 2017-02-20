@@ -51,6 +51,11 @@ describe("Widget", function () {
         expect(didRender).toEqual(true);
     });
 
+    it("returns a child by id", function () {
+        const w = parent.getChildById('rwt');
+        expect(w).toEqual(child);
+    });
+
     it("removes a child", function () {
         parent.removeChild(child);
         expect(parent.children.hasOwnProperty('rwt')).toEqual(false);

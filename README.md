@@ -1,7 +1,7 @@
 # widgetdemo2017
 HTML5 Canvas Widget Demo
 
-Simple demo of HTML5 Canvas rendering.
+Simple demo of HTML5 Canvas rendering. No external dependencies (except for unit test dependencies).
 
 ## Try It Out
 View the [demo](https://skyschulz.github.io/widgetdemo2017/).
