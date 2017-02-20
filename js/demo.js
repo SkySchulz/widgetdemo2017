@@ -106,9 +106,14 @@ const onScoreboard = function (sb) {
     renderCanvas();
 };
 
+let fallBack = 0;
 const onFail = function (request) {
     // TODO render pop-up on failure to load
-    console.error("request failed: " + request.status);
+    console.error("request failed: " + request.status + ', ' + request.url);
+    fallBack++;
+    if (fallBack == 1) {
+        getJson("data/master_scoreboard.json", onScoreboard, onFail, onTimeout);
+    }
 };
 
 const onTimeout = function (request) {
