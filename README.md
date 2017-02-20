@@ -8,6 +8,8 @@ View the [demo](https://skyschulz.github.io/widgetdemo2017/).
 
 Note: currently only loads correctly under Chrome (after allowing insecure content for the URL), due to CSP restrictions. Otherwise, it uses a local fallback of the scoreboard data.
 
+If downloaded locally, should work fine, as CSP restrictions does not appear to impact file:// URLs.
+
 ## Testing
 Unit tests are written using the [Jasmine](https://jasmine.github.io) test framework.
 
