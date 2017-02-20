@@ -6,6 +6,8 @@ Simple demo of HTML5 Canvas rendering. No external dependencies (except for unit
 ## Try It Out
 View the [demo](https://skyschulz.github.io/widgetdemo2017/).
 
+Note: currently only works under Chrome (after allowing insecure content for the URL), due to CSP restrictions.
+
 ## Testing
 Unit tests are written using the [Jasmine](https://jasmine.github.io) test framework.
 
