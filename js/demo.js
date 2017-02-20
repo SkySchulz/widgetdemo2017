@@ -74,18 +74,18 @@ const onResize = function() {
 const getJson = function(src, onLoad, onError, onTimeout) {
     const request = new XMLHttpRequest();
     request.ontimeout = function() { onTimeout(request); };
-    request.onreadystatechange = function () {
-        if (request.readyState == 4) {
-            onLoad(JSON.parse(request.responseText));
-        }
-    };
-    // request.onload = function () {
-    //     if (request.status >= 200 && request.status < 400) {
-    //         onLoad(JSON.parse(request.responseText)); // ??? may fail on parsing
-    //     } else {
-    //         onError(request);
+    // request.onreadystatechange = function () {
+    //     if (request.readyState == 4 && request.status >= 200 && request.status < 400) {
+    //         onLoad(JSON.parse(request.responseText));
     //     }
     // };
+    request.onload = function () {
+        if (request.status >= 200 && request.status < 400) {
+            onLoad(JSON.parse(request.responseText)); // ??? may fail on parsing
+        } else {
+            onError(request);
+        }
+    };
     request.onerror = function() { onError(request); };
     request.open('GET', src, true);
     request.send(null);
