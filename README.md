@@ -17,3 +17,7 @@ To run the unit tests, the following must be installed:
  * [node.js](https://nodejs.org/en/)
  * `npm install karma-jasmine karma-chrome-launcher jasmine-core --save-dev`
  * `npm install karma-cli` or `sudo npm install -g karma-cli`
+ 
+ 
+ Some stupid changes.
+ 
