@@ -1,0 +1,21 @@
+{
+  "name": "widget-demo-2017",
+  "version": "0.0.1",
+  "description": "2017 Widget Demo",
+  "homepage": "https://github.com/SkySchulz/widgetdemo2017",
+  "license": "MIT",
+  "author": {
+    "name": "Sky Schulz",
+    "email": "sky@ogn.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SkySchulz/widgetdemo2017.git"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.3",
+    "jasmine-core": "^2.5.2",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0"
+  }
+}
